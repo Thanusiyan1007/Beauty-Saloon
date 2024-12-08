@@ -1,0 +1,232 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern and clean for body text */
+    margin: 0;
+    margin-top: 80px;
+    padding: 0;
+    color: #333333;
+    background-color: #f8f9fa; /* Light grey background for contrast */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif; /* Elegant serif for headings */
+    margin: 0;
+}
+
+/* General Navbar Styling */
+.navbar {
+    padding: 1rem 2rem;  /* Increase left and right padding */
+    background-color: #ff66b2;  /* Light pastel pink */
+    height: 80px; /* Adjust navbar height */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.75rem;  /* Increase the font size of the brand */
+    color: #333333;  /* Darker grey for better contrast */
+}
+
+.nav-link {
+    font-size: 1.2rem;  /* Increase font size for links */
+    margin-right: 2rem;  /* Increase spacing between links */
+    color: #333333;  /* Dark grey for readability */
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff66b2;  /* Coral on hover */
+    text-decoration: underline;
+}
+
+.text-light i {
+    font-size: 1.75rem;  /* Increase icon size */
+}
+
+.text-light i:hover {
+    color: #00B4D8;  /* Aqua icon hover effect */
+    cursor: pointer;
+}
+
+/* Spacing adjustment for left and right items */
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between; /* Spread the left and right sections */
+}
+
+.navbar .navbar-collapse {
+    flex-grow: 1;  /* Allow the collapse section to take up available space */
+}
+
+.navbar .d-flex {
+    gap: 1rem; /* Adjust the spacing between icons */
+}
+
+.navbar .d-flex.align-items-center a {
+    padding: 0 0.5rem; /* Add left and right padding for links and icons */
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        margin: 0.5rem 0;
+    }
+}
+
+/* Image Section Styling */
+.image-section {
+    position: relative;
+    height: calc(100vh - 80px); /* Subtract navbar height (80px) from full viewport height */
+    overflow: hidden; /* Hide any overflow for aesthetics */
+}
+
+/* Style the image inside the image-section */
+.image-section img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Ensure the image covers the section without distortion */
+}
+
+/* Welcome message styling */
+.image-section .welcome-message {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning to exact center */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for better readability */
+    z-index: 2; /* Ensure the text is above the image */
+}
+
+.image-section .welcome-message h1 {
+    font-size: 3rem; /* Larger heading for emphasis */
+    margin-bottom: 1rem; /* Space between heading and paragraph */
+}
+
+.image-section .welcome-message p {
+    font-size: 1.5rem; /* Slightly smaller text for the paragraph */
+}
+
+/* Responsive Typography Adjustments */
+@media (max-width: 768px) {
+    .image-section .welcome-message h1 {
+        font-size: 2rem;
+    }
+
+    .image-section .welcome-message p {
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+}
+
+#services h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #ff66b2; /* Coral color */
+    margin-bottom: 2rem;
+}
+FF6F61
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333333;
+}
+
+/* Footer Section Styles */
+.footer-section {
+    background-color: #2c3e50;  /* Dark background for modern look */
+    color: #ecf0f1;  /* Light text for contrast */
+    padding: 40px 0;  /* Adds space around the footer content */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ff66b2;  /* A golden yellow to make titles pop */
+  }
+  
+  .footer-description {
+    font-size: 1rem;
+    color: #bdc3c7;
+    line-height: 1.6;
+  }
+  
+  .footer-links .footer-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer-links .footer-link {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .footer-links .footer-link:hover {
+    color: #ff66b2;  /* Adds a hover effect to links */
+  }
+  
+  .footer-social .footer-social-list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+  }
+  
+  .footer-social .footer-social-link {
+    color: #ecf0f1;
+    font-size: 1.8rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social .footer-social-link:hover {
+    color: #ff66b2;  /* Changes icon color on hover */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #bdc3c7;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  /* Mobile and Tablet Responsiveness */
+  @media (max-width: 768px) {
+    .footer-section {
+      padding: 30px 15px;  /* Adjust padding on smaller screens */
+    }
+  
+    .footer-social .footer-social-list {
+      justify-content: center;
+    }
+  
+    .footer-social .footer-social-link {
+      margin-right: 10px;
+    }
+  
+    .footer-bottom {
+      margin-top: 20px;
+    }
+  }
+  

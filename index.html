@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Saloon</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom border-body fixed-top">
+    <div class="container-fluid">
+      <!-- Left side: Logo -->
+      <a class="navbar-brand text-light" href="Assets/logo.jpg">Beauty Salon</a>
+
+      <!-- Center: Navbar items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScxtUcgN4GBDqFBkxid4kdp8T7tS1WfjbLjdrNYTePuS4Y8Pw/viewform?vc=0&c=0&w=1&fl">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right side: Cart and Account icons -->
+      <div class="d-flex align-items-center">
+        <!-- Cart Icon (Opens Modal) -->
+        <a href="#cartModal" class="text-light me-3" title="Cart" data-bs-toggle="modal">
+          <i class="bi bi-cart"></i>
+        </a>
+
+        <!-- Bill Icon (Redirects to payment page) -->
+        <a href="payment.html" class="text-light" title="Bill">
+          <i class="bi bi-file-earmark-text"></i>
+        </a>
+
+        <!-- Account Icon (No change to this as per request) -->
+        <a href="#account" class="text-light" title="Account">
+          <i class="bi bi-person-circle"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Product List Modal (for Cart) -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul id="cartItems">
+            <!-- Dynamically add cart items here -->
+            <li>Product 1 - $25</li>
+            <li>Product 2 - $30</li>
+            <!-- Add more products as needed -->
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="payment.html" class="btn btn-primary">Proceed to Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Image Section -->
+  <section class="image-section">
+    <img src="Assets/nude-photography-fashion-style-natural-beauty-naked-woman-flowers-portrait.jpg" class="img-fluid"
+      alt="Beauty Salon">
+    <div class="welcome-message text-center text-light">
+      <h1>Welcome to Beauty Salon</h1>
+      <p>Your one-stop destination for relaxation and beauty treatments.</p>
+      <!-- Book Now Button -->
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScxtUcgN4GBDqFBkxid4kdp8T7tS1WfjbLjdrNYTePuS4Y8Pw/viewform?vc=0&c=0&w=1&fl"
+        class="btn"
+        style="background-color: #e55b98; color: white; padding: 12px 24px; border-radius: 8px; margin-top: 15px; text-decoration: none;"
+        target="_blank">Book Now</a>
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+        <!-- Hair Salon Service -->
+        <div class="col">
+          <a href="hair-salon.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="Assets/woman-hairdresser-salon.jpg" class="card-img-top" alt="Hair Salon">
+              <div class="card-body">
+                <h5 class="card-title">Hair Salon Service</h5>
+                <p class="card-text">Stylish cuts, coloring, and treatments to keep your hair looking fabulous.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Nail Service -->
+        <div class="col">
+          <a href="nail-service.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="Assets/professional-realizing-beautiful-manicure.jpg" class="card-img-top" alt="Nail Service">
+              <div class="card-body">
+                <h5 class="card-title">Nail Service</h5>
+                <p class="card-text">Manicures, pedicures, and nail art for beautifully polished hands and feet.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Facial Treatments -->
+        <div class="col">
+          <a href="facial-treatments.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="Assets/woman-beauty-clinic-face-treatment.jpg" class="card-img-top" alt="Facial Treatments">
+              <div class="card-body">
+                <h5 class="card-title">Facial Treatments</h5>
+                <p class="card-text">Rejuvenating facials to enhance your natural glow and skin health.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Makeup Service -->
+        <div class="col">
+          <a href="makeup-service.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="Assets/man-wearing-make-up-make-up-brushes.jpg" class="card-img-top" alt="Makeup Service">
+              <div class="card-body">
+                <h5 class="card-title">Makeup Service</h5>
+                <p class="card-text">Professional makeup services for special occasions or everyday elegance.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Eye Treatments -->
+        <div class="col">
+          <a href="eye-treatments.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="Assets/young-woman-getting-beauty-treatment-her-eyebrows.jpg" class="card-img-top"
+                alt="Eye Treatments">
+              <div class="card-body">
+                <h5 class="card-title">Eye Treatments</h5>
+                <p class="card-text">Luxurious eye treatments for relaxation and to reduce signs of fatigue.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Massage Therapy -->
+        <div class="col">
+          <a href="massage-therapy.html" class="text-decoration-none">
+            <div class="card h-100">
+              <img src="Assets/man-spa-salon.jpg" class="card-img-top" alt="Massage Therapy">
+              <div class="card-body">
+                <h5 class="card-title">Massage Therapy</h5>
+                <p class="card-text">Relaxing massages to relieve stress and promote wellness and healing.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-5" style="background-color: #f8f0f9; color: #333;">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left: Image -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="Assets/beautiful-girl-with-perfect-hair.jpg" class="img-fluid rounded-lg shadow-lg"
+            alt="Beauty Salon" style="border-radius: 20px; transition: transform 0.3s ease-in-out;">
+        </div>
+
+        <!-- Right: Content -->
+        <div class="col-md-6">
+          <h2 class="text-center"
+            style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: #FF66B2;">
+            About Us
+          </h2>
+          <h3 class="fw-bold mb-3" style="font-family: 'Poppins', sans-serif; font-size: 28px; color: #FF66B2;">
+            Our Commitment to Excellence
+          </h3>
+          <p class="mb-4" style="font-family: 'Poppins', sans-serif; line-height: 1.6; font-size: 18px; color: #666;">
+            At Beauty Salon, we strive to provide you with the finest beauty treatments and a luxurious experience. Our
+            team is dedicated to enhancing your beauty with the latest techniques and premium products, ensuring a
+            personalized experience that leaves you feeling rejuvenated and confident.
+          </p>
+          <p class="mb-4" style="font-family: 'Poppins', sans-serif; line-height: 1.6; font-size: 18px; color: #666;">
+            We offer a wide range of services that focus on your unique needs, whether it’s a relaxing massage,
+            professional hair styling, or rejuvenating skin care. Our mission is to make every visit feel like a
+            retreat.
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="#services" class="btn"
+              style="background-color: #FF66B2; color: white; border-radius: 50px; padding: 12px 30px; font-family: 'Poppins', sans-serif;">
+              Explore Our Services
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add CSS for hover effect on the image -->
+  <style>
+    #about .col-md-6:first-child:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Hover effect on button */
+    .btn:hover {
+      background-color: #e55b98;
+      /* Slightly darker shade for hover */
+    }
+  </style>
+
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="py-5" style="background-color: #ffffff;">
+    <div class="container">
+      <h2 class="text-center"
+        style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700; color: #FF66B2;">
+        Contact Us
+      </h2>
+      <p class="text-center mb-5" style="font-family: 'Poppins', sans-serif; font-size: 18px; color: #666;">
+        We'd love to hear from you! Feel free to reach out for any inquiries or feedback.
+      </p>
+
+      <div class="row">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <form action="#" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label" style="font-family: 'Poppins', sans-serif; font-size: 18px;">Full
+                Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label"
+                style="font-family: 'Poppins', sans-serif; font-size: 18px;">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label"
+                style="font-family: 'Poppins', sans-serif; font-size: 18px;">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn"
+              style="background-color: #FF66B2; color: white; border-radius: 50px; padding: 12px 30px; font-family: 'Poppins', sans-serif;">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-6">
+          <h4 class="mb-4" style="font-family: 'Poppins', sans-serif; color: #FF66B2;">Our Location</h4>
+          <p class="mb-3" style="font-family: 'Poppins', sans-serif; color: #666;">
+            Beauty Salon, 123 Beauty St., City Center, Your City, Country
+          </p>
+          <p class="mb-3" style="font-family: 'Poppins', sans-serif; color: #666;">
+            <strong>Phone:</strong> +123 456 7890
+          </p>
+          <p class="mb-3" style="font-family: 'Poppins', sans-serif; color: #666;">
+            <strong>Email:</strong> contact@beautysalon.com
+          </p>
+
+          <!-- Embedded Map -->
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115051.41935315567!2d80.05762564965929!3d9.648376059226447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afef9396205c5e1%3A0x24a3609df5a99c9e!2sChavakachcheri!5e1!3m2!1sen!2slk!4v1732871237403!5m2!1sen!2slk"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5" style="background-color: #e55b98; color: white;">
+    <div class="container">
+      <h2 class="text-center" style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 700;">
+        What Our Clients Say
+      </h2>
+      <p class="text-center mb-5" style="font-family: 'Poppins', sans-serif; font-size: 18px;">
+        Hear from our satisfied clients who have experienced our exceptional beauty services.
+      </p>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Testimonial 1 -->
+        <div class="col">
+          <div class="card shadow-lg border-0" style="border-radius: 20px; background-color: #fff; color: #333;">
+            <div class="card-body">
+              <p class="card-text" style="font-family: 'Poppins', sans-serif; font-size: 16px; color: #666;">
+                "I had an amazing experience at Beauty Salon! The hair styling was perfect, and the staff made me feel
+                so comfortable. I left feeling rejuvenated and beautiful!"
+              </p>
+              <p class="fw-bold" style="font-family: 'Poppins', sans-serif; color: #FF66B2;">- Sarah J.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col">
+          <div class="card shadow-lg border-0" style="border-radius: 20px; background-color: #fff; color: #333;">
+            <div class="card-body">
+              <p class="card-text" style="font-family: 'Poppins', sans-serif; font-size: 16px; color: #666;">
+                "The massage therapy I received was fantastic! It helped me relax and unwind after a long week. Highly
+                recommend this salon to everyone!"
+              </p>
+              <p class="fw-bold" style="font-family: 'Poppins', sans-serif; color: #FF66B2;">- John D.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col">
+          <div class="card shadow-lg border-0" style="border-radius: 20px; background-color: #fff; color: #333;">
+            <div class="card-body">
+              <p class="card-text" style="font-family: 'Poppins', sans-serif; font-size: 16px; color: #666;">
+                "I had a facial treatment, and my skin has never felt better! The staff were professional and very
+                knowledgeable. I'll definitely be coming back."
+              </p>
+              <p class="fw-bold" style="font-family: 'Poppins', sans-serif; color: #FF66B2;">- Emma L.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add CSS for hover effect on card -->
+  <style>
+    .card:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+    }
+  </style>
+
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Logo and Info -->
+        <div class="col-md-4 footer-logo">
+          <h5 class="footer-title">Beauty Salon</h5>
+          <p class="footer-description">
+            Your one-stop destination for all your beauty needs. From haircuts to massages, we offer the best services
+            to make you feel and look your best.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 footer-links">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#contact" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="col-md-4 footer-social">
+          <h5 class="footer-title">Follow Us</h5>
+          <ul class="footer-social-list">
+            <li>
+              <a href="https://www.facebook.com" target="_blank" class="footer-social-link">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" target="_blank" class="footer-social-link">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com" target="_blank" class="footer-social-link">
+                <i class="bi bi-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com" target="_blank" class="footer-social-link">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 Beauty Salon. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Icons CDN (required for icons) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
